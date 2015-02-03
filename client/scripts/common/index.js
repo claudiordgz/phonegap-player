@@ -18,9 +18,9 @@ module.exports = function(namespace) {
 
     app.config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise('/views/home.html');
+            $urlRouterProvider.otherwise('home');
             $stateProvider.state('home', {
-                url: '/',
+                url: '/home',
                 template: require('./views/home.html')
             });
         }
