@@ -1,12 +1,6 @@
 'use strict';
 var controllername = 'hello';
 
-function switchColors(fromColor, toColor){
-    var tempColor = fromColor;
-    fromColor = toColor;
-    toColor = tempColor;   
-}
-
 module.exports = function(app) {
     /*jshint validthis: true */
 
@@ -81,8 +75,6 @@ module.exports = function(app) {
             ];
             vm.animate();
         };
-        
-        
         
         activate();
     }
